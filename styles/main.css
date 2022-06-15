@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.signin {
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 0;
+}
+
+.signin .form-box .input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  padding: 0.4rem;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+.signin .form-box .typed-inputs .input-box {
+  border: 1px solid #e3e3e3;
+}
+.signin .form-box .typed-inputs .input-box:focus-within {
+  border-color: #602f75;
+  outline: none;
+}
+.signin .form-box .typed-inputs .input-box > input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  padding-right: 90px;
+  padding-left: 50px;
+  font-size: 1rem;
+}
+.signin .form-box .typed-inputs .input-box > input:focus {
+  outline: none;
+}
+.signin .form-box .typed-inputs .input-box > span {
+  position: absolute;
+  left: 15px;
+  user-select: none;
+}
+.signin .form-box .action-buttons .input-box {
+  padding: 0;
+  margin-top: 1.3rem;
+}
+.signin .form-box .action-buttons .input-box button {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  padding: 0.4rem;
+  border: 1px solid #602f75;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+.signin .form-box .action-buttons .input-box button:nth-child(1) {
+  background-color: #602f75;
+}
+.signin .form-box .action-buttons .input-box button:nth-child(1) > a {
+  color: #fff;
+}
+.signin .form-box .action-buttons .input-box button:nth-child(2) {
+  background-color: #EA3A5C;
+  border-color: #EA3A5C;
+}
+.signin .form-box .action-buttons .input-box button:nth-child(2) > a {
+  color: #fff;
+}
+.signin .forget-password {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2.8rem;
+}
+.signin .forget-password a {
+  border: 1px solid #602f75;
+  border-radius: 25px;
+  padding: 0.3rem 1rem;
+}
+.signin .alternative-signin {
+  margin-top: 1rem;
+}
+.signin .alternative-signin > .alt-option > button {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  padding: 0.5rem;
+  appearance: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: none;
+}
+.signin .alternative-signin > .alt-option > button > a {
+  color: #fff;
+}
+
+.apple > button {
+  background-color: #000;
+}
+
+.insta > button {
+  background-image: linear-gradient(to right, #FFC000, #F77F23, #F45033, #EE004E);
+}
+
+.twitter > button {
+  background-color: #1DA1F2;
+}
+
+.snap > button {
+  background-color: #FEE501;
+}
+
+.signin .img-box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.signin .img-box > img {
+  width: 4rem;
+}
+
+.flash {
+  display: none;
+}
+
+.flash.show {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flash.show > img {
+  animation: bumb 2s infinite;
+  width: 8rem;
+}
+
+@keyframes bumb {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
