@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="assets/ico/logo.png" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet" />
+
+  <title>انشئ حساب جديد | المعالي</title>
+</head>
+
+<body>
+
+  <div class="signup">
+    <div class="img-box">
+      <img src="assets/elma3aly.png" alt="elma3aly logo">
+    </div>
+
+    <div class="form-box">
+      <form action="verify.html">
+        <div class="typed-inputs">
+          <div class="input-box focus-animation" tabindex="0">
+            <input type="text" id="username" name="username" class="special-input" required />
+            <label for="phone">اسم المستخدم</label>
+          </div>
+          <div class="input-box focus-animation" tabindex="0">
+            <input type="tel" id="phone" name="phone" required />
+            <label for="phone">رقم الجوال</label>
+            <span>+20</span>
+          </div>
+          <div class="input-box focus-animation">
+            <input type="email" class="special-input" name="email" id="email" required />
+            <label for="email">بريدك الالكتروني</label>
+          </div>
+          <div class="location-box">
+            <div class="input-box focus-animation">
+              <input type="text" name="city" id="city" placeholder="اضغط علي الرمز للحصول علي عنوانك" required />
+            </div>
+            <div class="location-button">
+              <button type="button">
+                <img src="assets/location.png" alt="location icon">
+              </button>
+            </div>
+          </div>
+          <div class="gender">
+            <div class="male">
+              <input type="radio" id="male" name="gender" required>
+              <label for="male">ذكر</label>
+            </div>
+            <div class="female">
+              <input type="radio" id="female" name="gender" required>
+              <label for="female">انثي</label>
+            </div>
+          </div>
+
+          <div class="input-box focus-animation" tabindex="0">
+            <input type="password" id="password" name="password" required />
+            <label for="phone">كلمة المرور</label>
+          </div>
+
+          <div class="input-box focus-animation" tabindex="0">
+            <input type="password" id="password" name="password" required  class="special-input" />
+            <label for="phone">تاكيد كلمة المرور</label>
+          </div>
+
+          <div class="conditions" style="font-weight:bold">
+            <input type="checkbox" id="conditions" name="conditions" required />
+            <label for="conditions">
+              <span>أوافق على</span>
+              <span>شروط الاستخدام</span>
+              <span>و</span>
+              <span>سياسة الخصوصية</span>
+            </label>
+          </div>
+
+        </div>
+
+        <div class="action-buttons">
+          <div class="input-box">
+            <button type="submit">
+              حساب جديد
+            </button>
+            <button type="button" class="empty">
+              <a href="signin.html">لدي حساب بالفعل</a>
+            </button>
+          </div>
+        </div>
+
+        <a href="#" class="problem">لديك مشكلة في التسجل؟</a>
+
+      </form>
+    </div>
+
+  </div>
+
+  <script src="scripts/function.js"></script>
+  <script src="scripts/signup.js"></script>
+</body>
+
+</html>
