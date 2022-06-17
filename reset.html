@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="assets/ico/logo.png" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet" />
+
+  <title>اعادة تعيين كلمة السر | المعالي</title>
+</head>
+
+<body>
+
+
+  <div class="container pt">
+    <h1 class="activate">
+      اعادة تعيين <span>كلمة المرور</span>
+    </h1>
+    <p>قم بإدخال الكود الذي تم إرساله<br />
+      إلى رقم الجول أو البريد الإلكتروني</p>
+
+    <form action="signin.html">
+      <div class="form-box">
+        <div class="input-box-special">
+          <input type="text" name="code" id="code" required placeholder="56369" style="margin-bottom: 1rem;" />
+          <hr />
+          <div class="new-password">
+            <div class="input-box-special">
+              <input type="password" name="password" id="password" required placeholder="كلمةالمرور الجديدة" />
+              <input type="password" name="re-password" id="re-password" required
+                placeholder="تاكيد كلمة المرور الجديدة" />
+            </div>
+          </div>
+          <div class="action-buttons">
+            <div class="input-box">
+              <button type="submit">اعادة تعيين كلمة المرور</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="resend">
+      <a href="">إعادة إرسال الكود <span class="counter">60</span></a>
+    </div>
+
+    <a href="forget.html">
+      <div class="return">
+        <img src="assets/navigation bar.png" alt="return" />
+      </div>
+    </a>
+
+  <script src="scripts/function.js"></script>
+  <script src="scripts/reset.js"></script>
+</body>
+
+</html>

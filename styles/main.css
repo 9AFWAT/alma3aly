@@ -1,3 +1,88 @@
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.container-fluid .nav-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-fluid .nav-content > * {
+  padding: 1rem 0;
+}
+.container-fluid .nav-content .alert {
+  position: relative;
+}
+.container-fluid .nav-content .alert::after {
+  content: attr(data-notifications);
+  position: absolute;
+  width: 0.9rem;
+  height: 0.9rem;
+  line-height: 1rem;
+  background-color: red;
+  border-radius: 50%;
+  top: 12px;
+  left: 8px;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  border: 2px solid #fff;
+}
+
+main figure {
+  position: relative;
+}
+main figure > img {
+  width: 100%;
+}
+main figure .pagination {
+  position: absolute;
+  bottom: 1.1rem;
+  left: 1rem;
+  background-color: rgba(0, 0, 0, 0.397);
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 25px;
+  gap: 0.3rem;
+}
+main figure .pagination > span {
+  padding: 0.3rem;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.521);
+  border-radius: 50%;
+}
+main figure .pagination > span.active {
+  background: #fff;
+}
+
+.navigation-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  padding: 0.6rem 1rem;
+  user-select: none;
+}
+.navigation-bar .row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navigation-bar .row .icon {
+  text-align: center;
+}
+.navigation-bar .row .icon h4 {
+  margin: -10px;
+  color: #000;
+}
+.navigation-bar .row .icon.active h4 {
+  color: #602f75 !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -270,6 +355,73 @@ li {
   box-shadow: 0 0 0 2px #602f75;
 }
 
+.latest-competions .row {
+  display: flex;
+  min-width: 100%;
+  overflow: auto;
+  gap: 1rem;
+}
+.latest-competions .row .col {
+  flex-shrink: 0;
+  text-align: center;
+  min-width: 200px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.latest-competions .row .col h3 {
+  font-size: 16px;
+}
+.latest-competions .row .col p {
+  font-size: 12px;
+}
+.latest-competions img {
+  width: 100%;
+}
+
+h2.section-heading {
+  font-size: 1.3rem;
+  padding: 0.6rem;
+}
+
+.latest-exams {
+  margin: 1rem 0;
+  margin-bottom: 70px;
+}
+.latest-exams .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+.latest-exams .row .col {
+  flex-basis: calc(50% - 20px);
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #F8F8F8;
+}
+.latest-exams .row .col img {
+  width: 60%;
+}
+
+.btn {
+  font-size: 13px;
+  padding: 0.3rem 1rem;
+  border-radius: 25px;
+  border: 1px solid #602f75;
+  background-color: #fff;
+  color: #602f75;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn-fill {
+  background-color: #602f75 !important;
+  color: #fff !important;
+}
+
 .pt {
   padding-top: 80px;
 }
@@ -347,6 +499,84 @@ li {
   100% {
     transform: translateX(0);
   }
+}
+.reset-password > input {
+  text-align: right !important;
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+
+.new-password input {
+  margin-top: 1rem;
+  text-align: right !important;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+.competions-heading {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.competions-heading > div {
+  width: fit-content;
+  border: 2px dashed hsla(0deg, 0%, 0%, 0.36);
+  margin: auto;
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+}
+.competions-heading span:nth-child(1) {
+  color: #602f75;
+}
+.competions-heading span:nth-child(2) {
+  color: #EA3A5C;
+}
+.competions-heading p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.comp-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 70px;
+}
+.comp-row a:nth-child(1) {
+  background-color: #CE9BAC;
+  border-radius: 25px;
+}
+.comp-row a:nth-child(2) {
+  background-color: #CECC9B;
+  border-radius: 25px;
+}
+.comp-row a:nth-child(3) {
+  background-color: #9B9BCE;
+  border-radius: 25px;
+}
+.comp-row a:nth-child(4) {
+  background-color: #9BCECC;
+  border-radius: 25px;
+}
+.comp-row a {
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+.comp-row a h3 {
+  color: #fff;
+}
+.comp-row a img {
+  width: 100%;
+}
+.comp-row a:nth-child(1), .comp-row a:nth-child(4) {
+  height: 220px;
+}
+.comp-row a:nth-child(2), .comp-row a:nth-child(3) {
+  height: 280px;
+}
+.comp-row a:nth-child(3) {
+  margin-top: -60px;
 }
 
 /*# sourceMappingURL=main.css.map */
