@@ -3,50 +3,50 @@
 
 <head>
   <meta charset="UTF-8">
+  <title>الصفحة الرئيسية | المعالي</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" href="assets/ico/logo.png" />
-  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="assets/imgs/ico/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet" />
-
-  <title>الصفحة الرئيسية | المعالي</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/styles/main.css" />
 </head>
 
 <body>
 
   <header>
-    
     <nav>
       <div class="container-fluid">
         <div class="nav-content">
           <div class="alert" data-notifications="1">
-            <a href="">
-              <img src="assets/alert.png" alt="notifications">
+            <a href="notifications.html">
+              <img src="assets/imgs/alert.png" alt="notifications">
             </a>
           </div>
           <div class="logo">
             <a href="">
-              <img src="assets/Layer 1.png" alt="logo">
+              <img src="assets/imgs/Layer 1.png" alt="logo">
             </a>
           </div>
           <div class="search">
             <a href="">
-              <img src="assets/Path 99.png" alt="search">
+              <img src="assets/imgs/Path 99.png" alt="search">
             </a>
           </div>
         </div>
       </div>
     </nav>
-
   </header>
 
 
   <main>
     <figure>
-      <img src="assets/bg.png" alt="background">
+      <img src="assets/imgs/bg.png" alt="background" style="max-height: 50vh; object-fit: cover" class="image-slider">
       <div class="pagination">
         <span class="active"></span>
         <span></span>
@@ -56,10 +56,10 @@
 
     <section class="latest-competions">
       <h2 class="section-heading">احدث المسابقات</h2>
-      <div class="row">
+      <div class="row owl-carousel" dir="ltr">
         <div class="col">
           <figure>
-            <img src="assets/51315.png" alt="competion">
+            <img src="assets/imgs/51315.png" alt="competion">
             <figcaption>
               <h3>اسم المسابقة</h3>
               <p>موعد المسابقة
@@ -71,7 +71,7 @@
         </div>
         <div class="col">
           <figure>
-            <img src="assets/7723d94c8abb938c4a976c9287c1-should-schools-abolish-exams.png" alt="competion">
+            <img src="assets/imgs/51315.png" alt="competion">
             <figcaption>
               <h3>اسم المسابقة</h3>
               <p>موعد المسابقة
@@ -83,7 +83,31 @@
         </div>
         <div class="col">
           <figure>
-            <img src="assets/download1.png" alt="competion">
+            <img src="assets/imgs/51315.png" alt="competion">
+            <figcaption>
+              <h3>اسم المسابقة</h3>
+              <p>موعد المسابقة
+                <span>12/10/2022</span>
+              </p>
+              <button class="btn">اشترك</button>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img src="assets/imgs/7723d94c8abb938c4a976c9287c1-should-schools-abolish-exams.png" alt="competion">
+            <figcaption>
+              <h3>اسم المسابقة</h3>
+              <p>موعد المسابقة
+                <span>12/10/2022</span>
+              </p>
+              <button class="btn">اشترك</button>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img src="assets/imgs/download1.png" alt="competion">
             <figcaption>
               <h3>اسم المسابقة</h3>
               <p>موعد المسابقة
@@ -101,7 +125,7 @@
       <div class="row">
         <div class="col">
           <figure>
-            <img src="assets/download.png" alt="test">
+            <img src="assets/imgs/download.png" alt="test">
             <figcaption>
               <h3>اسم الاختبار</h3>
               <button class="btn btn-fill">اشترك</button>
@@ -110,7 +134,7 @@
         </div>
         <div class="col">
           <figure>
-            <img src="assets/download.png" alt="test">
+            <img src="assets/imgs/download.png" alt="test">
             <figcaption>
               <h3>اسم الاختبار</h3>
               <button class="btn btn-fill">اشترك</button>
@@ -119,7 +143,7 @@
         </div>
         <div class="col">
           <figure>
-            <img src="assets/download.png" alt="test">
+            <img src="assets/imgs/download.png" alt="test">
             <figcaption>
               <h3>اسم الاختبار</h3>
               <button class="btn btn-fill">اشترك</button>
@@ -128,10 +152,10 @@
         </div>
         <div class="col">
           <figure>
-            <img src="assets/download.png" alt="test">
+            <img src="assets/imgs/download.png" alt="test">
             <figcaption>
               <h3>اسم الاختبار</h3>
-              <button class="btn btn-fill">اشترك</button>
+              <button class="btn btn-fill">اشترك</bu>
             </figcaption>
           </figure>
         </div>
@@ -145,7 +169,7 @@
       <li class="icon active">
         <a href="home.html">
           <figure>
-            <img src="assets/home.png" alt="home">
+            <img src="assets/imgs/home.png" alt="home">
             <h4>الرئيسية</h4>
           </figure>
         </a>
@@ -153,23 +177,23 @@
       <li class="icon">
         <a href="competions.html">
           <figure>
-            <img src="assets/competition-non.png" alt="competition">
+            <img src="assets/imgs/competition-non.png" alt="competition">
             <h4>المسابقات</h4>
           </figure>
         </a>
       </li>
       <li class="icon">
-        <a href="">
+        <a href="test.html">
           <figure>
-            <img src="assets/exmas.png" alt="exmas">
+            <img src="assets/imgs/exmas-non.png" alt="exmas">
             <h4>الاختبارات</h4>
           </figure>
         </a>
       </li>
       <li class="icon">
-        <a href="">
+        <a href="more.html">
           <figure>
-            <img src="assets/menu.png" alt="more">
+            <img src="assets/imgs/menu-non.png" alt="more">
             <h4>المزيد</h4>
           </figure>
         </a>
@@ -177,6 +201,9 @@
     </ul>
   </nav>
 
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="assets/js/home.js"></script>
 </body>
 
 </html>
