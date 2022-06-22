@@ -93,6 +93,74 @@ img {
   vertical-align: unset;
 }
 
+#overlay {
+  -webkit-animation: fade 0.3s;
+          animation: fade 0.3s;
+}
+
+#overlay.fadeout {
+  -webkit-animation: fadeout 0.3s;
+          animation: fadeout 0.3s;
+}
+
+#overlay #popup {
+  -webkit-animation: fadeup 0.3s;
+          animation: fadeup 0.3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeup {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeup {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -502,9 +570,21 @@ h2.section-heading {
   margin: 10px;
 }
 
-.btn-fill {
+.btn.btn-fill {
+  background-color: #602f75;
+  color: #fff;
+}
+
+.text-indigo-800 {
+  color: #602f75 !important;
+}
+
+.bg-indigo-800 {
   background-color: #602f75 !important;
-  color: #fff !important;
+}
+
+.hover\:bg-indigo-800:hover {
+  background-color: #602f75 !important;
 }
 
 .red-dot::after {
@@ -562,7 +642,7 @@ h2.section-heading {
 }
 .resend > a {
   padding: 0.6rem 1rem;
-  background-color: #BCBCBC;
+  background-color: #bcbcbc;
   border-radius: 25px;
   color: #fff;
 }
@@ -643,7 +723,7 @@ h2.section-heading {
   color: #602f75;
 }
 .competions-heading span:nth-child(2) {
-  color: #EA3A5C;
+  color: #ea3a5c;
 }
 .competions-heading p {
   margin-top: 1rem;
@@ -657,39 +737,46 @@ h2.section-heading {
   padding: 1rem;
   margin-bottom: 70px;
 }
-.comp-row a:nth-child(1) {
-  background-color: #CE9BAC;
+.comp-row li:nth-child(1) {
+  background-color: #ce9bac;
   border-radius: 25px;
 }
-.comp-row a:nth-child(2) {
-  background-color: #CECC9B;
+.comp-row li:nth-child(2) {
+  background-color: #cecc9b;
   border-radius: 25px;
 }
-.comp-row a:nth-child(3) {
-  background-color: #9B9BCE;
+.comp-row li:nth-child(3) {
+  background-color: #9b9bce;
   border-radius: 25px;
 }
-.comp-row a:nth-child(4) {
-  background-color: #9BCECC;
+.comp-row li:nth-child(4) {
+  background-color: #9bcecc;
   border-radius: 25px;
 }
-.comp-row a {
+.comp-row li {
   text-align: center;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.comp-row a h3 {
-  color: #fff;
-}
-.comp-row a img {
+.comp-row li a {
   width: 100%;
 }
-.comp-row a:nth-child(1), .comp-row a:nth-child(4) {
+.comp-row li h3 {
+  color: #fff;
+}
+.comp-row li img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comp-row li:nth-child(1), .comp-row li:nth-child(4) {
   height: 220px;
 }
-.comp-row a:nth-child(2), .comp-row a:nth-child(3) {
+.comp-row li:nth-child(2), .comp-row li:nth-child(3) {
   height: 280px;
 }
-.comp-row a:nth-child(3) {
+.comp-row li:nth-child(3) {
   margin-top: -60px;
 }/*# sourceMappingURL=main.css.map */

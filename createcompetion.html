@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>انشاء مسابقة جديدة</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="assets/ico/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles/main.css" />
+</head>
+
+<body>
+
+  <div class="p-3 relative border-b border-gray-100">
+    <h1 class="text-center text-xl">انشاء مسابقة</h1>
+    <button id="return" class="absolute right-5 top-[50%] translate-y-[-50%]" aria-label="return">
+      <img src="assets/imgs/navigation bar.png" alt="return">
+    </button>
+  </div>
+
+  <form action="competions.html">
+    <div>
+      <div class="flex flex-col my-3 mx-4">
+        <label for="comp_name" class="text-indigo-800 mb-2">اسم المسابقة</label>
+        <input type="text" id="comp_name" placeholder="اسم المسابقة"
+          class="py-3 px-3 outline-none border border-gray-200 rounded focus-animation">
+      </div>
+      <div class="flex flex-col my-3 mx-4">
+        <label for="comp_price" class="text-indigo-800 mb-2">سعر المسابقة</label>
+        <input type="text" id="comp_price" placeholder="ادخل سعر المسابقة مثال :8"
+          class="py-3 px-3 outline-none border border-gray-200 rounded focus-animation">
+      </div>
+      <div class="flex flex-col my-3 mx-4">
+        <label for="comp_time" class="text-indigo-800 mb-2">الوقت المحدد لإجابة السؤال بالثواني</label>
+        <input type="text" id="comp_time" placeholder="ادخل عدد الثواني"
+          class="py-3 px-3 outline-none border border-gray-200 rounded focus-animation">
+      </div>
+      <div class="flex flex-col my-3 mx-4">
+        <label for="comp-section" class="text-indigo-800 mb-2">اختر قسم المسابقة</label>
+        <select name="comp-section" id="comp-section"
+          class="py-2 px-3 outline-none border border-gray-200 rounded focus-animation color-checker">
+          <option value="" hidden disabled selected>اختر قسم المسابقة</option>
+          <option value="eg">مصر</option>
+          <option value="ksa">السعودية</option>
+          <option value="ira">العراق</option>
+          <option value="usa">الولايات المتحدة</option>
+        </select>
+      </div>
+      <div class="flex flex-col my-3 mx-4 border-b pb-6">
+        <label for="comp-section-alt" class="text-indigo-800 mb-2">قسم فرعي المسابقة</label>
+        <select name="comp-section-alt" id="comp-section-alt"
+          class="py-2 px-3 outline-none border border-gray-200 rounded focus-animation color-checker">
+          <option value="" hidden disabled selected>اختر قسم فرعي المسابقة</option>
+          <option value="eg">مصر</option>
+          <option value="ksa">السعودية</option>
+          <option value="ira">العراق</option>
+          <option value="usa">الولايات المتحدة</option>
+        </select>
+      </div>
+    </div>
+    <div class="px-4">
+      <div class="bg-gray-100">
+        <div class="flex flex-col my-3 mx-4">
+          <label for="comp_time" class="text-indigo-800 mb-2">السؤال الاول</label>
+          <textarea type="number" id="comp_time" placeholder="ادخل عدد الثواني"
+            class="py-3 px-3 outline-none border border-gray-200 rounded focus-animation resize-none min-h-[90px]"></textarea>
+        </div>
+        <p class="px-4 pb-3 text-center text-gray-400">الاجابات</p>
+      </div>
+      <div class="bg-gray-200 p-1">
+        <div class="flex flex-col my-3 mx-3">
+          <div class="flex justify-between items-center">
+            <label for="comp_question-1" class="text-indigo-800 mb-2">الاختيار الأول</label>
+            <div class="flex items-center">
+              <label for="correct-1" class="text-gray-500 ml-2 select-none">الاجابة الصحيحة</label>
+              <input type="checkbox" id="correct-1">
+            </div>
+          </div>
+          <input type="text" id="comp_question-1" placeholder="الاختيار الأول"
+            class="py-3 px-3 outline-none border border-gray-200 rounded focus-animation">
+          <input type="file" class="hidden" id="fuck">
+          <button type="button" class=" items-center justify-end text-indigo-800 mt-2 upload flex">
+            إضافة صورة للإجابة
+            <img src="assets/imgs/image.png" alt="upload" class="mr-2">
+          </button>
+          <div>
+            <img src=""></img>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100 p-1">
+        <div class="flex flex-col my-3 mx-3">
+          <div class="flex justify-between items-center">
+            <label for="comp_question-2" class="text-indigo-800 mb-2">الاختيار الثاني</label>
+            <div class="flex items-center">
+              <label for="correct-2" class="text-gray-500 ml-2 select-none">الاجابة الصحيحة</label>
+              <input type="checkbox" id="correct-2">
+            </div>
+          </div>
+          <input type="text" id="comp_question-2" placeholder="الاختيار الثاني"
+            class="py-3 px-3 outline-none border border-gray-200 rounded focus-animation">
+          <input type="file" class="hidden" id="file-2">
+          <button type="button" class="flex items-center justify-end text-indigo-800 mt-2 upload">
+            إضافة صورة للإجابة
+            <img src="assets/imgs/image.png" alt="upload" class="mr-2">
+          </button>
+          <div>
+            <img src=""></img>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-200 p-1">
+        <div class="flex flex-col my-3 mx-3">
+          <div class="flex justify-between items-center">
+            <label for="comp_question-3" class="text-indigo-800 mb-2">الاختيار الثالث</label>
+            <div class="flex items-center">
+              <label for="correct-3" class="text-gray-500 ml-2 select-none">الاجابة الصحيحة</label>
+              <input type="checkbox" id="correct-3">
+            </div>
+          </div>
+          <input type="text" id="comp_question-3" placeholder="الاختيار الثالث"
+            class="py-3 px-3 outline-none border border-gray-200 rounded focus-animation">
+          <input type="file" class="hidden">
+          <button type="button" class="flex items-center justify-end text-indigo-800 mt-2 upload">
+            إضافة صورة للإجابة
+            <img src="assets/imgs/image.png" alt="upload" class="mr-2">
+          </button>
+          <div>
+            <img src=""></img>
+          </div>
+        </div>
+      </div>
+      <!-- here -->
+      <div class="bg-gray-100 p-1">
+        <div class="flex flex-col my-3 mx-3">
+          <div class="flex justify-between items-center">
+            <label for="comp_question-4" class="text-indigo-800 mb-2">الاختيار الرابع</label>
+            <div class="flex items-center">
+              <label for="correct-4" class="text-gray-500 ml-2 select-none">الاجابة الصحيحة</label>
+              <input type="checkbox" id="correct-4">
+            </div>
+          </div>
+          <input type="text" id="comp_question-4" placeholder="الاختيار الثاني"
+            class="py-3 px-3 outline-none border border-gray-200 rounded focus-animation">
+          <input type="file" class="hidden">
+          <button type="button" class="flex items-center justify-end text-indigo-800 mt-2 upload">
+            إضافة صورة للإجابة
+            <img src="assets/imgs/image.png" alt="upload" class="mr-2">
+          </button>
+          <div>
+            <img src=""></img>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center my-4">
+      <button type="button"
+        class="btn btn-fill !bg-cyan-500 flex items-center border-none gap-2 rounded px-5 py-3 hover:!bg-cyan-600 transition-colors">
+        <img src="assets/imgs/add.png" alt="add">
+        إضافة سؤال
+      </button>
+      <button type="button"
+        class="btn btn-fill !bg-rose-600 flex items-center border-none gap-2 rounded px-5 py-3 hover:!bg-rose-700 transition-colors">
+        <img src="assets/imgs/remove.png" alt="remove">
+        حذف سؤال
+      </button>
+    </div>
+    <div class="px-4 mb-4">
+      <input type="submit" value="تأكيد انشاء المسابقة" class="btn btn-fill w-full m-0 rounded px-4 py-3">
+    </div>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="assets/js/return.js"></script>
+  <script src="assets/js/createCompetion.js"></script>
+</body>
+
+</html>
