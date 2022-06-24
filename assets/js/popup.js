@@ -12,8 +12,12 @@ $("#overlay").on("click", function (e) {
   }
 });
 
+let points = 19; // competion points for testing
+
 $("#points-count").on("click", function (e) {
-  e.preventDefault();
-  $("#overlay").removeClass("hidden");
-  $("#overlay").removeClass("fadeout");
+  if (points < 20) {
+    e.preventDefault();
+    $("#overlay").removeClass("hidden");
+    $("#overlay").removeClass("fadeout");
+  }
 });

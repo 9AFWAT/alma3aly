@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>معلوماتي الشخصية</title>
+    <link rel="icon" href="assets/ico/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/styles/main.css" />
+  </head>
+  <body>
+    <div class="p-3 relative border-b border-gray-100">
+      <h1 class="text-center text-xl">معلوماتي الشخصية</h1>
+      <button
+        id="return"
+        class="absolute right-5 top-[50%] translate-y-[-50%]"
+        aria-label="return"
+      >
+        <img src="assets/imgs/navigation bar.png" alt="return" />
+      </button>
+    </div>
+
+    <div class="p-6">
+      <div class="text-center mb-6">
+        <img class="inline" src="assets/imgs/user-image.png" alt="user" />
+      </div>
+      <form action="">
+        <div class="mb-2">
+          <label for="" class="text-gray-400 mb-2 block">اسم المستخدم</label>
+          <input
+            type="text"
+            value="أحمد عبدالرحمن"
+            class="w-full p-3 border rounded-md outline-none focus-animation"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="" class="text-gray-400 mb-2 block"
+            >البريد الإلكتروني</label
+          >
+          <input
+            type="text"
+            value="user@almaaly.com"
+            class="w-full p-3 border rounded-md outline-none focus-animation"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="" class="text-gray-400 mb-2 block">العنوان</label>
+          <input
+            type="text"
+            value="السعودية - مكة"
+            class="w-full p-3 border rounded-md outline-none focus-animation"
+          />
+        </div>
+        <div class="mb-2">
+          <div class="flex justify-between items-center">
+            <label for="" class="text-indigo-800 mb-2 block">كلمة المرور</label>
+            <button class="btn btn-fill m-0 rounded py-0 px-1 text-xs flex items-center">
+              تغيير
+              <img src="assets/imgs/edit.png" class="mr-1" alt="edit">
+            </button>
+          </div>
+          <input
+            type="password"
+            value="أحمد عبدالرحمن"
+            class="w-full p-3 border rounded-md outline-none focus-animation"
+            type="button"
+          />
+        </div>
+        <div>
+          <a href="" class="btn btn-fill w-full text-center rounded px-3 py-4 mt-9 m-0 !hidden change block">حفظ</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="assets/js/return.js"></script>
+    <script src="assets/js/userInfo.js"></script>
+  </body>
+</html>
