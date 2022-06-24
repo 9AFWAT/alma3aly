@@ -598,6 +598,27 @@ h2.section-heading {
   border-radius: 50%;
 }
 
+.camera-icon {
+  position: absolute;
+  bottom: 8px;
+  right: -7px;
+  width: 15px;
+  height: 15px;
+  background-color: #602f75;
+  padding: 5px;
+  box-sizing: content-box;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.camera-file-upload > img:nth-child(1) {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .arrow-go {
   position: relative;
   display: block;
